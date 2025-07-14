@@ -1,0 +1,54 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Withdraw",
+      "request": "launch",
+      "mainClass": "Withdraw",
+      "projectName": "java project_12fadbcb"
+    },
+    {
+      "type": "java",
+      "name": "mainclass",
+      "request": "launch",
+      "mainClass": "mainclass",
+      "projectName": "java project_12fadbcb"
+    },
+    {
+      "type": "java",
+      "name": "Deposite",
+      "request": "launch",
+      "mainClass": "Deposite",
+      "projectName": "java project_12fadbcb"
+    },
+    {
+      "type": "java",
+      "name": "signup3",
+      "request": "launch",
+      "mainClass": "signup3",
+      "projectName": "java project_12fadbcb"
+    },
+    {
+      "type": "java",
+      "name": "signup2",
+      "request": "launch",
+      "mainClass": "signup2",
+      "projectName": "java project_12fadbcb"
+    },
+    {
+      "type": "java",
+      "name": "Login",
+      "request": "launch",
+      "mainClass": "Login",
+      "projectName": "java project_12fadbcb"
+    },
+    {
+      "type": "java",
+      "name": "Run Java Swing App",
+      "request": "launch",
+      "mainClass": "Signup",
+      "vmArgs": "-cp .;c:\\Users\\anshb\\Downloads\\jcalendar-tz-1.3.3-4.jar"
+    }
+  ]
+}
