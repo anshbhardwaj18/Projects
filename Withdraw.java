@@ -1,7 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
-public class Withdraw extends JFrame{
+public class Withdraw extends JFrame implements ActionListener{
     String pin;
     TextField textField;
     JButton b1, b2;
@@ -16,15 +18,27 @@ public class Withdraw extends JFrame{
         image.setBounds(0, 0, 1550, 793);
         add(image);
 
-        JLabel label1 = new JLabel("MAXIMUM WITHDRAWL AMOUNT IS RS. 10000 AT ONE TIME");
-        label1.setBounds(440, 180, 400, 35);
-        label1.setFont(new Font("Raleway", Font.BOLD, 13));
+        JLabel label1 = new JLabel("> MAXIMUM WITHDRAWL AMOUNT IS RS. 10000");
+        label1.setBounds(440, 140, 400, 35);
+        label1.setFont(new Font("Raleway", Font.BOLD, 14));
         label1.setForeground(Color.WHITE);
         image.add(label1);
 
+        JLabel label2 = new JLabel("(At A Time)");
+        label2.setBounds(453, 153, 400, 35);
+        label2.setFont(new Font("Raleway", Font.BOLD, 10));
+        label2.setForeground(Color.WHITE);
+        image.add(label2);
+
+        JLabel label3 = new JLabel("> Please Enter Your Amount");
+        label3.setBounds(440, 190, 400, 35);
+        label3.setFont(new Font("Raleway", Font.BOLD, 15));
+        label3.setForeground(Color.WHITE);
+        image.add(label3);
+
         textField = new TextField();
         textField.setBackground(new Color(65, 125, 128));
-        textField.setBounds(460, 230, 320, 25);
+        textField.setBounds(440, 230, 320, 25);
         textField.setFont(new Font("Raleway", Font.BOLD, 16));
         textField.setForeground(Color.WHITE);
         image.add(textField);
@@ -51,6 +65,10 @@ public class Withdraw extends JFrame{
         setSize(1550, 1080);
         setLocation(0, 0);
         setVisible(true);
+    }
+    @Override
+    public void actionPerformed(ActionEvent e){
+
     }
     public static void main(String args[]){
         new Withdraw();
